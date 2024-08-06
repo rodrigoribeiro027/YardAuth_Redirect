@@ -1,0 +1,7 @@
+{
+  "name": "YardAuth_Redirect",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

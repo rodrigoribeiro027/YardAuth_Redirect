@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title slot="start">
+      Login com Okta
+    </ion-title>
+    <ion-button (click)="login()" slot="end">Login</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="email; else loading">
+    <p>Email: {{ email }}</p>
+    <p>
+      {{ hostUrl }}/check-email?email={{ email }}
+    </p>
+  </div>
+  <ng-template #loading>
+    <ion-spinner></ion-spinner>
+    <p>Loading...</p>
+  </ng-template>
+</ion-content>
